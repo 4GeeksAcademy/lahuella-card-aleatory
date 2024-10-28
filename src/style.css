@@ -1,1 +1,66 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: wheat;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 520px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.suit {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.number {
+  font-size: 15rem;
+  line-height: 1;
+  color: #000;
+}
+
+.superior.suit {
+  align-self: flex-start;
+  margin-left: 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+.inferior.suit {
+  align-self: flex-end;
+  transform: rotate(180deg);
+  padding-left: 10px;
+  position: relative;
+  top: 10px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: green;
+}
